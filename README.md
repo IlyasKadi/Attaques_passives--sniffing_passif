@@ -6,8 +6,8 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="700" height="400">
-  <h2 align="center">Project 2</h2>
-  <h3 align="center">Domain Name System Protocol</h3>
+  <h2 align="center">TP 1</h2>
+  <h3 align="center">Attaques passives : sniffing passif</h3>
 </div>
 
 
