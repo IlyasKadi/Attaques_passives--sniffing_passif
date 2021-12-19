@@ -52,9 +52,20 @@ locale et la machine distante</a></li>
         </li>
    </ol>
 
+# Attaques passives : sniffing passif
+
+Les sniffers (appelé aussi « analyseurs de protocoles » ou « analyseurs de réseau ») sont des
+outils logiciels qui peuvent capturer les trames circulant sur un réseau local et afficher leurs
+contenus (entêtes des protocoles, identités des utilisateurs, mot de passe non cryptés, etc). Ces
+outils sont utilisés par les administrateurs pour analyser leurs réseaux et localiser les
+problèmes dans ces derniers. Ils sont aussi utilisés par les attaquants pour espionner les
+données circulant dans un réseau local.
+
+<div align="center">
+    <img src="images/1-CS.png">
+</div>
 
 # Objectifs-de-ce-TP
-
 > - Implémenter un sniffer passif simple
 > - Manipuler des logiciels de sniffing
 
@@ -87,10 +98,6 @@ locale et la machine distante</a></li>
 >  - La fonction ParseTcpHeader qui permet d’afficher quelques champs de l’entête TCP
 >  - La fonction ParseData qui permet d’afficher les données sous format hexadécimal
 
-
-<div align="center">
-    <img src="images/named.conf.local.png">
-</div>
 
 ## Compilation-et-la-génération
 
