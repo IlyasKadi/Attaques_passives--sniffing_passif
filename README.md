@@ -113,7 +113,9 @@ sur l’interface eth0.
 <div align="center">
     <img src="images/sniffer.png">
 </div>
+
 > Dans ce cas les trames sont affichées sous format hexadécimal.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -246,6 +248,10 @@ Nous n’avons pas pu échanger de trafic entre d'autres machines et le reste du
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## affichage-du-trames-dont-la-taille-est-supérieure-à-une-taille-donnée
+**L'affichage du trames dont la taille est supérieure à une taille donnée**
+<div align="center">
+    <img src="images/taille.png">
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
