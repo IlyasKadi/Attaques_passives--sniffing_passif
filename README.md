@@ -215,13 +215,10 @@ Nous n’avons pas pu échanger de trafic entre d'autres machines et le reste du
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Configuration-du-filtre-de-wireshark
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## affichage-du-trames-concernant-les-protocoles
 **L'affichage du trames concernant le protocole: bootp, tcp, icmp,etc**
 <div align="center">
-    <img src="images/tcp.png">
+    <img src="images/icmp.png">
 </div>
 
 
@@ -239,7 +236,7 @@ Nous n’avons pas pu échanger de trafic entre d'autres machines et le reste du
 ## affichage-du-trames-échangé-entre-deux-machines
 **L'affichage du trames échangé entre deux machines d'adresse @IP1 et @IP2**
 <div align="center">
-    <img src="images/MAC.png">
+    <img src="images/trames.png">
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
