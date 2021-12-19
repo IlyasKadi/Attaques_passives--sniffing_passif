@@ -128,27 +128,35 @@ données circulant dans un réseau local.
 # Part-II
 Dans cette partie, nous nous intéressons à la manipulation de quelques sniffers existants.
 (Pour plus d’informations sur l’utilisation de wireshark ([cliquez ici](https://blog.varonis.fr/comment-utiliser-wireshark/)) et ([ici](http://www.machaon.fr/isn/reseaux/Fiche-Wireshark.pdf))
+
 ## Lancement-du-logiciel-wireshark
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Observation-des-paquets-capturés
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 ## capturation-des-trafics-échangés-entre-les-machines-du-reste-du-réseau
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Configuration-du-filtre-de-wireshark
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 ## affichage-du-trames-concernant-les-protocoles
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 ## affichage-du-trames-dont-l'adresse-MAC-destination-est-celle-de-votre-machine
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 ## affichage-du-trames-échangé-entre-deux-machines
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 ## affichage-du-trames-dont-la-taille-est-supérieure-à-une-taille-donnée
 
 <p align="right">(<a href="#top">back to top</a>)</p>
