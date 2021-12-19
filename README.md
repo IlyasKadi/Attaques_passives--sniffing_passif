@@ -124,43 +124,42 @@ données circulant dans un réseau local.
 ```C
 ParseUdpHeader(unsigned char *packet , int len)
 {
-struct ethhdr *ethernet_header;
-struct iphdr *ip_header;
-struct udphdr *udp_header;
-/* Check if enough bytes are there for TCP Header */
-if(len >= (sizeof(struct ethhdr) + sizeof(struct iphdr) + sizeof(struct
+       struct ethhdr *ethernet_header;
+       struct iphdr *ip_header;
+       struct udphdr *udp_header;
+       /* Check if enough bytes are there for TCP Header */
+       if(len >= (sizeof(struct ethhdr) + sizeof(struct iphdr) + sizeof(struct
 udphdr)))
-{
-/* Do all the checks: 1. Is it an IP pkt ? 2. is it TCP ? */
-ethernet_header = (struct ethhdr *)packet;
-if(ntohs(ethernet_header->h_proto) == ETH_P_IP)
-{
-ip_header = (struct iphdr *)(packet + sizeof(struct ethhdr));
-if(ip_header->protocol == IPPROTO_UDP)
-{
-printf("UDP datagram (UDP num=%d)\n", ip_header-
->protocol);
-udp_header = (struct udphdr*)(packet + sizeof(struct
+      {
+              /* Do all the checks: 1. Is it an IP pkt ? 2. is it TCP ? */
+              ethernet_header = (struct ethhdr *)packet;
+              if(ntohs(ethernet_header->h_proto) == ETH_P_IP)
+              {
+                    ip_header = (struct iphdr *)(packet + sizeof(struct ethhdr));
+                    if(ip_header->protocol == IPPROTO_UDP)
+                    {
+                          printf("UDP datagram (UDP num=%d)\n", ip_header->protocol);
+                          udp_header = (struct udphdr*)(packet + sizeof(struct
 ethhdr) + ip_header->ihl*4 );
-/* Print the Dest and Src ports */
-printf("Source Port: %d\n", ntohs(udp_header->source));
-printf("Dest Port: %d\n", ntohs(udp_header->dest));
-}
-else
-{
-printf("Not a UDP packet\n");
-}
-}
-else
-{
-printf("Not an IP packet\n");
-}
-}
-else
-{
-printf("UDP Header not present \n");
-}
-}
+                        /* Print the Dest and Src ports */
+                        printf("Source Port: %d\n", ntohs(udp_header->source));
+                        printf("Dest Port: %d\n", ntohs(udp_header->dest));
+                    }
+                    else
+                    {
+                        printf("Not a UDP packet\n");
+                    }
+             }
+             else
+             {
+                     printf("Not an IP packet\n");
+             }
+        }
+        else
+        {
+              printf("UDP Header not present \n");
+        }
+   }
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
