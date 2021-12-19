@@ -145,7 +145,9 @@ Dans cette partie, nous nous intéressons à la manipulation de quelques sniffer
 ## affichage-du-trames-dont-la-taille-est-supérieure-à-une-taille-donnée
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 # Part-III
+
 Dans cette section, nous nous intéressons l'utilisation d'un sniffer à distance « remote sniffing » pour obtenir les données circulant sur un autre réseau que celui sur lequel nous sommes. Supposons que nous sommes sur le réseau RES1 et nous voulons sniffer le réseau voisin RES2 (nous sommes séparés par un routeur). Nous utilisons alors un **client sniffer** sur une machine du réseau RES2 qui va sniffer ce dernier et envoyer les données capturées à notre **serveur sniffer** sur le réseau RES1. Le réseau B qui, en principe, était impossible à sniffer est devenu donc très accessible. Nous utilisons le démon **Rpcapd** ([plus de détails](https://www.winpcap.org/docs/docs_412/html/group__remote.html)) qui capture le trafic sur une machine, et est capable d'envoyer les données récupérées à un sniffer comme wireshark qui facilite ainsi la lecture en différenciant les trames et les protocoles. Notons qu'il est utile d'exclure le trafic entre la machine locale et la machine distante en utilisant les filtres de wireshark.
 
 ## La-capturation-du-trafic-entre-la-machine-locale-et-la-machine-distante
