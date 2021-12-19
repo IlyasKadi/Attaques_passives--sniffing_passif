@@ -62,7 +62,7 @@ problèmes dans ces derniers. Ils sont aussi utilisés par les attaquants pour e
 données circulant dans un réseau local.
 
 <div align="center">
-    <img src="images/1-CS.png">
+    <img src="images/1-CS.jpg">
 </div>
 
 # Objectifs-de-ce-TP
