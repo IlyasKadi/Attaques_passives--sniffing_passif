@@ -100,6 +100,17 @@ données circulant dans un réseau local.
 
 ## Compilation-et-la-génération
 
+<div align="center">
+    <img src="images/compilation.png">
+</div>
+
+> La Compilation du (cc -c sniffer_eth_ip_tcp_data.c).
+
+<div align="center">
+    <img src="images/generation.png">
+</div>
+
+> La génération du (cc sniffer_eth_ip_tcp_data.c -o sniffer).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -110,7 +121,7 @@ On execute le sniffer pour sniffer les 100 premieres trames reçues
 sur l’interface eth0.
 
 <div align="center">
-    <img src="images/sniffer.png">
+    <img src="images/execution.png">
 </div>
 
 > Dans ce cas les trames sont affichées sous format hexadécimal.
