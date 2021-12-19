@@ -31,8 +31,7 @@
         </li>
         <li><a href="#Part-II">Partie2 : manipulation de sniffers</a>
             <ul> 
-              <li><a href="#Lancement-du-logiciel-wireshark">Lancement du logiciel wireshark</a></li>
-              <li><a href="#Observation-des-paquets-capturés">Observation des paquets capturés (L’échange du trafic entre d'autres machines et la votre)</a></li>
+              <li><a href="#Lancement-du-logiciel-wireshark-et-Observation-des-paquets-capturés">Lancement du logiciel wireshark et Observation des paquets capturés</a></li>
               <li><a href="#capturation-des-trafics-échangés-entre-les-machines-du-reste-du-réseau">Est-ce que vous pouvez capturer les trafics échangés entre les machines du reste du réseau?</a></li>
               <li><a href="#Configuration-du-filtre-de-wireshark">Configuration du filtre de wireshark</a></li>
                 <ul>
@@ -196,7 +195,7 @@ ethhdr) + ip_header->ihl*4 );
 Dans cette partie, nous nous intéressons à la manipulation de quelques sniffers existants.
 (Pour plus d’informations sur l’utilisation de wireshark ([cliquez ici](https://blog.varonis.fr/comment-utiliser-wireshark/)) et ([ici](http://www.machaon.fr/isn/reseaux/Fiche-Wireshark.pdf))
 
-## Lancement-du-logiciel-wireshark
+## Lancement-du-logiciel-wireshark-et-Observation-des-paquets-capturés
 
 On lance le logiciel Wireshark et on démarre la capture sur
 l’interface eth0:
@@ -207,13 +206,10 @@ l’interface eth0:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Observation-des-paquets-capturés
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## capturation-des-trafics-échangés-entre-les-machines-du-reste-du-réseau
 
 **Est-ce que vous pouvez capturer les trafics échangés entre les machines du reste du réseau?**
+
 Nous n’avons pas pu échanger de trafic entre d'autres machines et le reste du réseau. Car on est pas on mode promiscieux.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
