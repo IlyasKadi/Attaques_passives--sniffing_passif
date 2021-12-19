@@ -107,20 +107,45 @@ données circulant dans un réseau local.
 
 ## exécution-du-sniffer
 
+On execute le sniffer pour sniffer les 100 premieres trames reçues
+sur l’interface eth0.
+
+<div align="center">
+    <img src="images/sniffer.png">
+</div>
+> Dans ce cas les trames sont affichées sous format hexadécimal.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## affichage-du-contenu-de-l’entête-ETHERNET
+Pour afficher le contenu de l’entête ETHERNET, il faut enlever le
+commentaire de la fonction ParseEthernetHeader. Aprés la
+compilation et l’execution nous obtenons le résultat suivant:
+
+<div align="center">
+    <img src="images/ETHERNET.png">
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## Afficher-du-contenu-des-entêtes-des-protocoles
 
+Pour Afficher le contenu des entêtes des protocoles des niveaux
+supérieurs, enlevez les commentaires des fonctions
+correspondantes (au niveau de la fonction main), on régénère
+l’executable et on l’execute:
+
+<div align="center">
+    <img src="images/protocoles.png">
+</div>
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## La-fonction-qui-permet-d’afficher-l’entête-UDP
+
+La fonction qui affiche l’en-tête UDP :
 ```C
 ParseUdpHeader(unsigned char *packet , int len)
 {
@@ -171,6 +196,13 @@ Dans cette partie, nous nous intéressons à la manipulation de quelques sniffer
 
 ## Lancement-du-logiciel-wireshark
 
+On lance le logiciel Wireshark et on démarre la capture sur
+l’interface eth0:
+
+<div align="center">
+    <img src="images/Wireshark.png">
+</div>
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Observation-des-paquets-capturés
@@ -179,6 +211,9 @@ Dans cette partie, nous nous intéressons à la manipulation de quelques sniffer
 
 ## capturation-des-trafics-échangés-entre-les-machines-du-reste-du-réseau
 
+**Est-ce que vous pouvez capturer les trafics échangés entre les machines du reste du réseau?**
+Nous n’avons pas pu échanger de trafic entre d'autres machines et le reste du réseau. Car on est pas on mode promiscieux.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Configuration-du-filtre-de-wireshark
@@ -186,14 +221,27 @@ Dans cette partie, nous nous intéressons à la manipulation de quelques sniffer
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## affichage-du-trames-concernant-les-protocoles
+**L'affichage du trames concernant le protocole: bootp, tcp, icmp,etc**
+<div align="center">
+    <img src="images/tcp.png">
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## affichage-du-trames-dont-l'adresse-MAC-destination-est-celle-de-votre-machine
 
+**L'affichage du trames dont l'adresse MAC destination est celle de votre machine**
+<div align="center">
+    <img src="images/MAC.png">
+</div>
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## affichage-du-trames-échangé-entre-deux-machines
+**L'affichage du trames échangé entre deux machines d'adresse @IP1 et @IP2**
+<div align="center">
+    <img src="images/MAC.png">
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
