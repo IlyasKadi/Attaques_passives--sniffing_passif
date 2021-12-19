@@ -212,7 +212,7 @@ On lance le logiciel Wireshark et on démarre la capture sur
 l’interface eth0:
 
 <div align="center">
-    <img src="images/Wireshark.png">
+    <img src="images/wireshark.png">
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
