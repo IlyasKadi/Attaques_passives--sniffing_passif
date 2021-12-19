@@ -68,7 +68,6 @@ locale et la machine distante</a></li>
 > - Les cartes réseau fonctionnent en deux modes
 >  * mode normal (mode par défaut) : permet à une carte de filtrer les trames reçus en fonction de l'adresse MAC destination
 >  * mode promiscuous : consiste à accepter toutes les trames circulant dans un réseau, même ceux qui ne sont pas destinés à la carte.
-
 > - Sous Unix, la commande # ifconfig promisc permet d’activer le mode promiscuous.
 > - La plupart des logiciels sniffers permettent d’activer le mode promoscuous lors de leur lancement.
 > - Dans un réseau commuté, le sniffing passif de toutes les trames qui circulent dans le réseau est impossible à réaliser puisqu'un nœud ne peut recevoir que les trames qui lui sont destinées.
